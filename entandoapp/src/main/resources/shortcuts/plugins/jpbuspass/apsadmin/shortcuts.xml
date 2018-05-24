@@ -1,0 +1,15 @@
+<shortcut-def>
+	<shortcuts>
+		<shortcut id="jpbuspass.Buspass.shortCut" requiredPermission="superuser" menusection="plugins" source="jpbuspass">
+			<description key="jpbuspass.Buspass.shortCut.list.shortDesc">Buspass list</description>
+			<longdesc key="jpbuspass.Buspass.shortCut.list.longDesc">
+				<![CDATA[Buspass shortCut longDesc ]]>
+			</longdesc>
+			<url>
+				<param name="namespace">/do/jpbuspass/Buspass</param>
+				<param name="actionName">list</param>
+			</url>
+		</shortcut>
+	</shortcuts>
+	
+</shortcut-def>

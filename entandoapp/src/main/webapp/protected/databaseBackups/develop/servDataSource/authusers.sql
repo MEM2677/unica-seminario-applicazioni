@@ -1,0 +1,1 @@
+INSERT INTO authusers (username,passwd,registrationdate,lastaccess,lastpasswordchange,active) VALUES ('admin','$argon2i$v=19$m=4096,t=4,p=4$aMUnrFNVXmrH45256OxFJQ$ZjveEjIOPqEi9S0AA6m30kjM+8i6ryVz2n+nUAeuDgY','2008-10-10 00:00:00','2018-05-25 00:00:00','2018-05-24 00:00:00',1);

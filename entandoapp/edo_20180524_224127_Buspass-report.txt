@@ -1,0 +1,108 @@
+****************************************************************
+
+						Edo Report		
+								
+****************************************************************
+
+=== Command Line
+
+[Buspass, name:string-r30, lname:string-r30, age:int-r, type:string-30]
+
+
+
+=== List of geneated files that MUST be merged:
+----------------------------------------------------------------
+Total files: 0
+Total lines: 0
+
+
+=== List of geneated files:
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\internalservlet\buspass\BuspassFinderFrontEndAction.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\internalservlet\buspass\BuspassFrontEndAction.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\internalservlet\buspass\buspassFront.xml
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\init\servdb\Buspass.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\Buspass.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\BuspassDAO.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\BuspassManager.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\IBuspassDAO.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\IBuspassManager.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\api\BuspassListResponse.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\api\BuspassListResponseResult.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\api\BuspassResponse.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\api\BuspassResponseResult.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\api\JAXBBuspass.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\event\BuspassChangedEvent.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\system\services\buspass\event\BuspassChangedObserver.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\tags\BuspassListTag.java
+src\main\java\org\entando\entando\plugins\jpbuspass\aps\tags\BuspassTag.java
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\BuspassAction-validation.xml
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\BuspassAction.java
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\BuspassFinderAction.java
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\buspass.xml
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\package_en.properties
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\package_it.properties
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\global-messages_en.properties
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\global-messages_it.properties
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\portal\specialwidget\buspass\BuspassConfigAction.java
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\portal\specialwidget\buspass\buspassSpecialWidget.xml
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\portal\specialwidget\buspass\package_en.properties
+src\main\java\org\entando\entando\plugins\jpbuspass\apsadmin\portal\specialwidget\buspass\package_it.properties
+src\main\resources\api\plugins\jpbuspass\aps\apiMethods.xml
+src\main\resources\component\plugins\jpbuspass\component.xml
+src\main\resources\entando-struts-plugin.xml
+src\main\resources\shortcuts\plugins\jpbuspass\apsadmin\shortcuts.xml
+src\main\resources\spring\plugins\jpbuspass\aps\managers\jpbuspassBuspassManagersConfig.xml
+src\main\resources\spring\plugins\jpbuspass\apsadmin\jpbuspassBuspassActionsConfig.xml
+src\main\resources\sql\plugins\jpbuspass\port_data_production.sql
+src\main\resources\sql\plugins\jpbuspass\serv_data_production.sql
+src\main\tld\plugins\jpbuspass\jpbuspass-core.tld
+src\main\webapp\WEB-INF\plugins\jpbuspass\aps\jsp\internalservlet\buspass\frontend-buspass-entry.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\aps\jsp\internalservlet\buspass\frontend-buspass-error.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\aps\jsp\internalservlet\buspass\frontend-buspass-list.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\aps\jsp\internalservlet\buspass\frontend-buspass-trash.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\aps\jsp\widgets\jpbuspassBuspass.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jpbuspass-tiles.xml
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\buspass\buspass-entry.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\buspass\buspass-list.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\buspass\buspass-trash.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\common\layouts\assets-more\buspass-entry-extras.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\common\layouts\assets-more\buspass-list-extras.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\common\layouts\assets-more\buspass-trash-extras.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\common\layouts\subMenu.jsp
+src\main\webapp\WEB-INF\plugins\jpbuspass\apsadmin\jsp\portal\specialwidget\buspass\buspass-config.jsp
+src\test\java\org\entando\entando\plugins\jpbuspass\JpbuspassConfigTestUtils.java
+src\test\java\org\entando\entando\plugins\jpbuspass\aps\JpbuspassBaseTestCase.java
+src\test\java\org\entando\entando\plugins\jpbuspass\aps\system\services\TestBuspassManager.java
+src\test\java\org\entando\entando\plugins\jpbuspass\apsadmin\JpbuspassApsAdminBaseTestCase.java
+src\test\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\TestBuspassAction.java
+src\test\java\org\entando\entando\plugins\jpbuspass\apsadmin\buspass\TestBuspassFinderAction.java
+src\test\resources\sql\plugins\jpbuspass\port_data_test.sql
+src\test\resources\sql\plugins\jpbuspass\serv_data_test.sql
+----------------------------------------------------------------
+Total files: 61
+Total lines: 3354
+
+
+
+
+
+=== Revert *port inserts
+
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_ID'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_NAME'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_LNAME'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_AGE'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_TYPE'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_ACTIONS'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_NEW'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_EDIT'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_TRASH'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_TRASH_CONFIRM'; 
+DELETE FROM localstrings where keycode = 'jpbuspass_BUSPASS_SEARCH_BUSPASS'; 
+
+
+DELETE FROM widgetcatalog where code = 'jpbuspassBuspass_list_form';
+DELETE FROM widgetcatalog where code = 'jpbuspassBuspass';
+
+
+

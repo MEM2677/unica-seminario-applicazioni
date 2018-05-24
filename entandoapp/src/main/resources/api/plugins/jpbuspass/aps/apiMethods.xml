@@ -1,0 +1,51 @@
+<apiMethodDefinitions>
+
+	<resource name="buspasss">
+        <description>Return the buspass list</description>
+        <source pluginCode="jpbuspass">plugins</source>
+		<method httpMethod="GET" active="true" canSpawnOthers="true">
+			<description>Return the buspasss list</description>
+			<springBean name="jpbuspassBuspassManager" method="getBuspasssForApi" />
+			<responseClass>org.entando.entando.plugins.jpbuspass.aps.system.services.buspass.api.BuspassListResponse</responseClass>
+			<!-- 
+			<parameters>
+			</parameters>
+			-->
+		</method>
+	</resource>
+  
+    <resource name="buspass">
+        <description>The buspass</description>
+        <source pluginCode="jpbuspass">plugins</source>
+        <method httpMethod="GET" active="true" canSpawnOthers="true">
+            <description>Return a buspass by id</description>
+            <springBean name="jpbuspassBuspassManager" method="getBuspassForApi" />
+            <responseClass>org.entando.entando.plugins.jpbuspass.aps.system.services.buspass.api.BuspassResponse</responseClass>
+            <parameters>
+                <parameter key="id" required="true">
+                    <description>The id of the buspass to return</description>
+                </parameter>
+            </parameters>
+        </method>
+        <method httpMethod="POST" active="true" requiredAuth="true" requiredPermission="superuser">
+            <description>Add a buspass</description>
+            <springBean name="jpbuspassBuspassManager" method="addBuspassForApi" />
+            <expectedType>org.entando.entando.plugins.jpbuspass.aps.system.services.buspass.api.JAXBBuspass</expectedType>
+        </method>
+        <method httpMethod="PUT" active="true" requiredAuth="true" requiredPermission="superuser">
+            <description>Update a buspass</description>
+            <springBean name="jpbuspassBuspassManager" method="updateBuspassForApi" />
+            <expectedType>org.entando.entando.plugins.jpbuspass.aps.system.services.buspass.api.JAXBBuspass</expectedType>
+        </method>
+        <method httpMethod="DELETE" active="true" requiredAuth="true" requiredPermission="superuser">
+            <description>Delete a buspass by id</description>
+            <springBean name="jpbuspassBuspassManager" method="deleteBuspassForApi" />
+            <parameters>
+                <parameter key="id" required="true">
+                    <description>The id of the buspass to delete</description>
+                </parameter>
+            </parameters>
+        </method>
+    </resource>
+	
+</apiMethodDefinitions>

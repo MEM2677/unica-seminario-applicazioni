@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="jpbuspass_do/FrontEnd/jpbuspass/Buspass" namespace="/do/FrontEnd/jpbuspass/Buspass" extends="entando-front-default">
+		
+		<global-results>
+			<result name="failure" type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_error</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-error.jsp</param>
+			</result>
+    	</global-results>
+		
+    	<action name="list" class="jpbuspassBuspassFinderFrontEndAction">
+    		<result type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_list</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-list.jsp</param>
+			</result>
+			<interceptor-ref name="entandoFrontEndFreeStack"></interceptor-ref>
+        </action>
+        
+    	<action name="search" class="jpbuspassBuspassFinderFrontEndAction">
+            <result type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_list</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-list.jsp</param>
+			</result>
+			<interceptor-ref name="entandoFrontEndFreeStack"></interceptor-ref>
+        </action>
+    	
+        <action name="new" class="jpbuspassBuspassFrontEndAction" method="newBuspass">
+            <result type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_entry</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-entry.jsp</param>
+			</result>
+			<interceptor-ref name="entandoFrontEndFreeStack"></interceptor-ref>
+        </action>
+    	
+        <action name="edit" class="jpbuspassBuspassFrontEndAction" method="edit">
+            <result type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_entry</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-entry.jsp</param>
+			</result>
+			<result name="input" type="frontRedirectAction">
+				<param name="actionName">list</param>
+			</result>
+        	<interceptor-ref name="entandoFrontEndFreeStack"></interceptor-ref>
+        </action>
+        
+        <action name="save" class="jpbuspassBuspassFrontEndAction" method="save">
+        	<result name="input" type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_entry</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-entry.jsp</param>
+			</result>
+			<result type="frontRedirectAction">
+				<param name="actionName">list</param>
+			</result>
+        	<interceptor-ref name="entandoFrontEndFreeValidationStack"></interceptor-ref>
+        </action>
+		
+    	<action name="trash" class="jpbuspassBuspassFrontEndAction" method="trash">
+            <result type="guiFragment">
+				<param name="code">jpbuspass_is_front_Buspass_trash</param>
+				<param name="jspLocation">/WEB-INF/plugins/jpbuspass/aps/jsp/internalservlet/buspass/frontend-buspass-trash.jsp</param>
+			</result>
+			<result name="input" type="frontRedirectAction">
+				<param name="actionName">list</param>
+			</result>
+        	<interceptor-ref name="entandoFrontEndFreeStack"></interceptor-ref>
+        </action>
+        
+    	<action name="delete" class="jpbuspassBuspassFrontEndAction" method="delete">
+        	<result type="frontRedirectAction">
+				<param name="actionName">list</param>
+			</result>
+        	<interceptor-ref name="entandoFrontEndFreeStack"></interceptor-ref>
+        </action>
+    	
+    </package>
+   
+</struts>
