@@ -1,0 +1,38 @@
+== Entando webapp - entandoapp
+
+1 - mvn archetype:generate -Dfilter=entando
+
+	group: it.unica.entandoapp
+	artifactId: entandoapp
+
+2 - java -jar edo-4.3.2-SNAPSHOT.jar Buspass name:string-r30 lname:string-r30 age:int-r type:string-30
+
+3 - Modifica del pom.xml
+
+<dependency>
+	<groupId>org.entando.entando.plugins</groupId>
+	<artifactId>entando-plugin-jprestapi</artifactId>
+	<version>${entando.version}</version>
+	<type>war</type>
+</dependency>
+<dependency>
+	<groupId>org.entando.entando.plugins</groupId>
+	<artifactId>entando-plugin-jprestapi</artifactId>
+	<version>${entando.version}</version>
+	<type>jar</type>
+	<classifier>classes</classifier>
+	<scope>provided</scope>
+</dependency>
+
+4 - dalla cartella "1-creazione-nuovo-servizio"
+
+	inserire le classi in BussPass* nel progetto e permettere all'ide di posizionarle nel path corretto
+  
+5 - copiare busPassApiManagerConfig.xml in resources resources/spring/aps
+
+6 - dalla cartella "2-modifica-servizio-esistente"
+
+	iniettare il nuovo servizio BussPassService nel servizio BuspassManager creato dal component builder
+ 
+    a) SOSTITUIRE la classe BuspassManager.java
+    b) SOSTITUIRE la definizione del manager jpbuspassBuspassManagersConfig.xml in resources/spring

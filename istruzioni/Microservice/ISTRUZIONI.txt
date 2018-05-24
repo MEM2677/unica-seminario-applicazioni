@@ -1,0 +1,51 @@
+== Microservice in Springboot
+
+ 1 - https://start.spring.io/
+     
+	 dipendenze: web, Actuator
+	 group: it.unica
+	 artifact: buspass
+	 
+ 2 - Aggiungere nel POM la dipendenza
+ 
+	<!-- drools core -->
+	<dependency>
+		<groupId>org.kie</groupId>
+		<artifactId>kie-ci</artifactId>
+		<version>7.7.0.Final</version>
+	</dependency>
+
+
+ 3 - copiare il file 1-resources\application.yml in src/main/resources
+	
+	
+ 4 - dalla ROOT del progetto creare la directory
+ 
+	src\main\resources\META-INF
+	
+ 5 - copiare il file 1-resources\kmodule.xml in (4)
+	
+ 6 - dalla ROOT del progetto creare la directory
+ 
+	src\main\resources\META-INF\it\unica\buspass\rules
+	
+ 7 - copiare la regola di Drools 1-resources\BusPass.drl in (6)
+
+ 8 - copiare nella directory buspass\src\main\java\it\unica\buspass\ le classi in
+      
+   "2-classi"
+
+ 9 - cancellare BuspassApplication.java (viene sostituita da un altro main)
+
+ 10 - creare il JAR
+
+	mvn package -DskipTests
+	
+ 11 - eseguire il microservizio
+	
+	java -jar target\buspass-0.0.1-SNAPSHOT.jar --server.port=8090
+	
+== Test REST api (Postman)
+
+   GET: http://localhost:8090/buspass?name=matteo&age=15
+   GET: http://127.0.0.1:8090/isJuniorPass?age=40
